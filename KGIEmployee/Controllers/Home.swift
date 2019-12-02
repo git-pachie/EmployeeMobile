@@ -52,9 +52,14 @@ extension HomeController: UICollectionViewDataSource, UICollectionViewDelegateFl
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! EmployeeCollectionViewCell
         
-        cell.layer.backgroundColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+        
+        cell.setupView(employee: employees[indexPath.item])
+        
+        applyRounderCorder(items: [cell])
+        
+        
         
         return cell
     }
@@ -71,6 +76,18 @@ extension HomeController: UICollectionViewDataSource, UICollectionViewDelegateFl
         let adjwidth = (width - spaceBetweenCells) / 2
         
         return CGSize(width: adjwidth, height: height)
+    }
+    
+    
+    func applyRounderCorder(items: [UIView]) -> () {
+        
+        for item in items {
+            
+            item.layer.cornerRadius = 10
+            
+            
+        }
+        
     }
     
     
