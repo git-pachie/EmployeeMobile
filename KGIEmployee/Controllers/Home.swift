@@ -6,6 +6,7 @@
 //  Copyright © 2019 boopbayssoftware. All rights reserved.
 //
 
+
 import UIKit
 
 class HomeController: UIViewController {
@@ -14,6 +15,7 @@ class HomeController: UIViewController {
     // var clsDB: DBEmployee?
     
     var employees = [Employee]()
+    let services = Services()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,11 @@ class HomeController: UIViewController {
        // clsDB = DBEmployee()
         
         //clsDB = DBEmployee()
+        
+        
+        
+        
+        
         
         DBEmployee.getemployees {[weak self] (result) in
             

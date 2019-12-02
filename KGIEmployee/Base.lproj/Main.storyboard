@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,7 +18,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dRa-Vo-v9k">
                                 <rect key="frame" x="10" y="64" width="394" height="788"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fxO-O2-JXj">
                                     <size key="itemSize" width="202" height="196"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -36,6 +36,13 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kgJ-Aw-ikG">
                                                     <rect key="frame" x="0.0" y="0.0" width="202" height="196"/>
                                                 </imageView>
+                                                <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ODE-Sh-TkF">
+                                                    <rect key="frame" x="0.0" y="136" width="202" height="60"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="mBJ-Z9-O9U"/>
+                                                    </constraints>
+                                                </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information Technology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGz-4x-ncH">
                                                     <rect key="frame" x="10" y="160" width="182" height="12"/>
                                                     <constraints>
@@ -68,11 +75,14 @@
                                                 <constraint firstItem="ZGz-4x-ncH" firstAttribute="leading" secondItem="ToQ-eI-aBK" secondAttribute="leading" constant="10" id="0Uh-y8-MNR"/>
                                                 <constraint firstAttribute="bottom" secondItem="ddI-eJ-UYo" secondAttribute="bottom" constant="10" id="1PK-3A-zja"/>
                                                 <constraint firstAttribute="trailing" secondItem="ddI-eJ-UYo" secondAttribute="trailing" constant="10" id="1ap-tY-WOA"/>
+                                                <constraint firstItem="ODE-Sh-TkF" firstAttribute="leading" secondItem="ToQ-eI-aBK" secondAttribute="leading" id="7My-jc-SQq"/>
                                                 <constraint firstItem="hC9-9E-V37" firstAttribute="leading" secondItem="ToQ-eI-aBK" secondAttribute="leading" constant="10" id="Gbh-jD-die"/>
                                                 <constraint firstItem="hC9-9E-V37" firstAttribute="trailing" secondItem="ZGz-4x-ncH" secondAttribute="trailing" id="H5p-fj-hs7"/>
                                                 <constraint firstItem="kgJ-Aw-ikG" firstAttribute="leading" secondItem="ToQ-eI-aBK" secondAttribute="leading" id="HwS-cp-KFr"/>
                                                 <constraint firstItem="kgJ-Aw-ikG" firstAttribute="top" secondItem="ToQ-eI-aBK" secondAttribute="top" id="LnX-xa-pJQ"/>
                                                 <constraint firstAttribute="trailing" secondItem="ZGz-4x-ncH" secondAttribute="trailing" constant="10" id="RXF-Ls-QY9"/>
+                                                <constraint firstAttribute="bottom" secondItem="ODE-Sh-TkF" secondAttribute="bottom" id="Rc0-Iv-Hpf"/>
+                                                <constraint firstAttribute="trailing" secondItem="ODE-Sh-TkF" secondAttribute="trailing" id="Vyz-9U-OWF"/>
                                                 <constraint firstItem="ddI-eJ-UYo" firstAttribute="leading" secondItem="ToQ-eI-aBK" secondAttribute="leading" constant="10" id="XZF-9E-mAJ"/>
                                                 <constraint firstItem="ZGz-4x-ncH" firstAttribute="top" secondItem="hC9-9E-V37" secondAttribute="bottom" constant="2" id="b65-m7-GnF"/>
                                                 <constraint firstItem="ddI-eJ-UYo" firstAttribute="top" secondItem="ZGz-4x-ncH" secondAttribute="bottom" constant="2" id="bLf-DR-w5a"/>
@@ -82,7 +92,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="kgJ-Aw-ikG" secondAttribute="bottom" id="zRX-B2-w7q"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="customSize" width="202" height="196"/>
                                         <connections>
                                             <outlet property="lblDepartment" destination="ZGz-4x-ncH" id="eV9-2D-7FN"/>

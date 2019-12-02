@@ -15,6 +15,8 @@ class EmployeeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var lblDepartment: UILabel!
     @IBOutlet weak var lblEmail: UILabel!
     
+    let services = Services()
+    
     func setupView(employee: Employee) -> () {
         
         
@@ -25,6 +27,23 @@ class EmployeeCollectionViewCell: UICollectionViewCell {
         
        // let image = UIImage(named: employee.imageFileName)
         
-        profileImaga.image = UIImage(named: employee.imageFileName)
+        
+        
+        var img = services.getimagefromdocuments(imageFileName: employee.imageFileName)
+        
+        guard img != nil else {
+            
+            print("Image not found \(employee.imageFileName)")
+            
+            //img = UIImage(named: "noprofile")
+            
+            return
+            
+        }
+        
+        profileImaga.image = img
+        
+        
+        
     }
 }
