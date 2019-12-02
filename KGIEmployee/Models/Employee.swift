@@ -25,3 +25,13 @@ class Employee {
         self.imageFileName = imageFileName
     }
 }
+
+class EmployeeDTO {
+    let departmentName: String
+    let employees: [Employee]
+    
+    init(departmentName: String, employees: [Employee]) {
+        self.departmentName = departmentName
+        self.employees = employees
+    }
+}

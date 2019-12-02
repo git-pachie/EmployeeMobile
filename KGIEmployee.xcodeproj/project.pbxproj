@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C882DB12395728A00A57E5C /* StaffDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C882DB02395728A00A57E5C /* StaffDetailsViewController.swift */; };
+		0C882DB3239599FF00A57E5C /* DepartmentHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C882DB2239599FF00A57E5C /* DepartmentHeaderReusableView.swift */; };
 		0C9903C523950D370042916C /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9903C423950D370042916C /* Services.swift */; };
 		5B38FD9E2394B3DF003025B7 /* EmployeeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B38FD9D2394B3DF003025B7 /* EmployeeCollectionViewCell.swift */; };
 		5BF99C3723942A0300399ABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF99C3623942A0300399ABC /* AppDelegate.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C882DB02395728A00A57E5C /* StaffDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffDetailsViewController.swift; sourceTree = "<group>"; };
+		0C882DB2239599FF00A57E5C /* DepartmentHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentHeaderReusableView.swift; sourceTree = "<group>"; };
 		0C9903C423950D370042916C /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		5B38FD9D2394B3DF003025B7 /* EmployeeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCollectionViewCell.swift; sourceTree = "<group>"; };
 		5BF99C3323942A0300399ABC /* KGIEmployee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KGIEmployee.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +98,7 @@
 				5BF99C3A23942A0300399ABC /* Home.swift */,
 				5BF99C5223942C1800399ABC /* DBEmployee.swift */,
 				0C9903C423950D370042916C /* Services.swift */,
+				0C882DB02395728A00A57E5C /* StaffDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				5B38FD9D2394B3DF003025B7 /* EmployeeCollectionViewCell.swift */,
+				0C882DB2239599FF00A57E5C /* DepartmentHeaderReusableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,6 +189,8 @@
 				5BF99C3923942A0300399ABC /* SceneDelegate.swift in Sources */,
 				5BF99C5123942ACA00399ABC /* Employee.swift in Sources */,
 				0C9903C523950D370042916C /* Services.swift in Sources */,
+				0C882DB3239599FF00A57E5C /* DepartmentHeaderReusableView.swift in Sources */,
+				0C882DB12395728A00A57E5C /* StaffDetailsViewController.swift in Sources */,
 				5BF99C4123942A0300399ABC /* KGIEmployee.xcdatamodeld in Sources */,
 				5B38FD9E2394B3DF003025B7 /* EmployeeCollectionViewCell.swift in Sources */,
 			);

@@ -29,7 +29,7 @@ class Services {
             
             //let finalImage = UIImage(named: image)
             
-            //print(imageURL)
+            print(imageURL)
             
             guard image != nil else {
                 
@@ -48,6 +48,17 @@ class Services {
         return image!
         
         //return nil
+        
+    }
+    
+    func applyRounderCorder(items: [UIView]) -> () {
+        
+        for item in items {
+            
+            item.layer.cornerRadius = 10
+            
+            
+        }
         
     }
 }
