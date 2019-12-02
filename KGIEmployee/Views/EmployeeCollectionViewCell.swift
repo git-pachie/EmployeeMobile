@@ -29,17 +29,17 @@ class EmployeeCollectionViewCell: UICollectionViewCell {
         
         
         
-        var img = services.getimagefromdocuments(imageFileName: employee.imageFileName)
+        let img = services.getimagefromdocuments(imageFileName: employee.imageFileName)
         
-        guard img != nil else {
-            
-            print("Image not found \(employee.imageFileName)")
-            
-            //img = UIImage(named: "noprofile")
-            
-            return
-            
-        }
+//        guard img != nil else {
+//            
+//            print("Image not found \(employee.imageFileName)")
+//            
+//            //img = UIImage(named: "noprofile")
+//            
+//            return
+//            
+//        }
         
         profileImaga.image = img
         
