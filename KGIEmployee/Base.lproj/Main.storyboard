@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,8 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="us4-Jt-Jup">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="DIh-1m-Ayj"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dRa-Vo-v9k">
-                                <rect key="frame" x="10" y="64" width="394" height="788"/>
+                                <rect key="frame" x="10" y="94" width="394" height="758"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fxO-O2-JXj">
                                     <size key="itemSize" width="202" height="196"/>
@@ -131,10 +138,13 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="dRa-Vo-v9k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="5Ff-bd-Z1v"/>
+                            <constraint firstItem="us4-Jt-Jup" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2TR-q2-DHO"/>
+                            <constraint firstItem="dRa-Vo-v9k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="5Ff-bd-Z1v"/>
                             <constraint firstItem="dRa-Vo-v9k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="O1S-It-eok"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dRa-Vo-v9k" secondAttribute="bottom" constant="10" id="OaH-r6-924"/>
+                            <constraint firstItem="us4-Jt-Jup" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Pj8-4g-rjO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dRa-Vo-v9k" secondAttribute="trailing" constant="10" id="Y3v-qT-8HE"/>
+                            <constraint firstItem="us4-Jt-Jup" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wM3-6n-GjW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
