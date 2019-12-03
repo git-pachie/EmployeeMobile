@@ -8,6 +8,22 @@
 
 import Foundation
 
+struct Staff: Decodable
+{
+    let EmployeeID: String
+    let Name: String
+    let Department: String
+    let Email: String
+    let Phone: String
+    let ProfileImageName: String
+}
+
+struct RootObject: Decodable
+{
+    let Department: String
+    let Staffs: [Staff]
+}
+
 class Employee {
     let employeeId: String
     let name: String

@@ -19,26 +19,33 @@ class HomeController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-       // clsDB = DBEmployee()
-        
-        //clsDB = DBEmployee()
         
         
+        let stp = StaffManager()
         
-        
-        
-        
-        DBEmployee.getemployees {[weak self] (result) in
+        stp.performURLRequest {[weak self] (result) in
             
             guard let self = self else { return }
             
             self.employees = result
             
+            
             self.employeeCollectionView.reloadData()
             
         }
+        
+        
+        
+        
+//        DBEmployee.getemployees {[weak self] (result) in
+//
+//            guard let self = self else { return }
+//
+//            self.employees = result
+//
+//            self.employeeCollectionView.reloadData()
+//
+//        }
         
     }
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C8346F02396A93500C2EAFE /* StaffManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8346EF2396A93500C2EAFE /* StaffManager.swift */; };
 		0C882DB12395728A00A57E5C /* StaffDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C882DB02395728A00A57E5C /* StaffDetailsViewController.swift */; };
 		0C882DB3239599FF00A57E5C /* DepartmentHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C882DB2239599FF00A57E5C /* DepartmentHeaderReusableView.swift */; };
 		0C9903C523950D370042916C /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9903C423950D370042916C /* Services.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C8346EF2396A93500C2EAFE /* StaffManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffManager.swift; sourceTree = "<group>"; };
 		0C882DB02395728A00A57E5C /* StaffDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffDetailsViewController.swift; sourceTree = "<group>"; };
 		0C882DB2239599FF00A57E5C /* DepartmentHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentHeaderReusableView.swift; sourceTree = "<group>"; };
 		0C9903C423950D370042916C /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
@@ -51,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C8346EE2396A90C00C2EAFE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0C8346EF2396A93500C2EAFE /* StaffManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		5BF99C2A23942A0300399ABC = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +80,7 @@
 		5BF99C3523942A0300399ABC /* KGIEmployee */ = {
 			isa = PBXGroup;
 			children = (
+				0C8346EE2396A90C00C2EAFE /* Service */,
 				5BF99C4F23942A7B00399ABC /* Views */,
 				5BF99C4E23942A6300399ABC /* Controllers */,
 				5BF99C4D23942A5300399ABC /* Models */,
@@ -184,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BF99C3B23942A0300399ABC /* Home.swift in Sources */,
+				0C8346F02396A93500C2EAFE /* StaffManager.swift in Sources */,
 				5BF99C5323942C1800399ABC /* DBEmployee.swift in Sources */,
 				5BF99C3723942A0300399ABC /* AppDelegate.swift in Sources */,
 				5BF99C3923942A0300399ABC /* SceneDelegate.swift in Sources */,
