@@ -29,7 +29,7 @@ class Services {
             
             //let finalImage = UIImage(named: image)
             
-            print(imageURL)
+           // print(imageURL)
             
             guard image != nil else {
                 

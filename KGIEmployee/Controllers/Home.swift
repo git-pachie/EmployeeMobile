@@ -16,12 +16,13 @@ class HomeController: UIViewController {
     
     var employees = [EmployeeDTO]()
     let services = Services()
+    var stp = StaffManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        let stp = StaffManager()
+        
         
         stp.performURLRequest {[weak self] (result) in
             
@@ -56,7 +57,30 @@ class HomeController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
     }
-
+    
+    
+    @IBAction func btnDownloadImageClicked(_ sender: Any) {
+        
+        for item in employees {
+            for inn in item.employees {
+                
+                DispatchQueue.global(qos: .userInitiated).async {
+                    
+                    self.stp.downloadImage(fileNameToDownload: inn.imageFileName) { (success) in
+                        print("download result \(success)")
+                        sleep(10)
+                    }
+                }
+                
+                
+                //return
+            }
+        }
+        
+        
+        
+    }
+    
 }
 
 extension HomeController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
@@ -89,7 +113,7 @@ extension HomeController: UICollectionViewDataSource, UICollectionViewDelegateFl
         
         let adjwidth = (width - spaceBetweenCells) / 2
         
-        let adjHeight = adjwidth * 1
+        let adjHeight = adjwidth * 1.25
         
         return CGSize(width: adjwidth, height: adjHeight)
     }
