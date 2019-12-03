@@ -131,12 +131,23 @@ extension HomeController: UICollectionViewDataSource, UICollectionViewDelegateFl
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView
     {
-        let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "departmentheader", for: indexPath) as! DepartmentHeaderReusableView
-        
-       
-            header.setupheader(numberofstaff: employees[indexPath.section].employees.count, departmentName: employees[indexPath.section].departmentName )
+        if  kind == UICollectionView.elementKindSectionHeader
+        {
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "departmentheader", for: indexPath) as! DepartmentHeaderReusableView
+             
             
-            return header
+                 header.setupheader(numberofstaff: employees[indexPath.section].employees.count, departmentName: employees[indexPath.section].departmentName )
+                 
+                 return header
+        }
+        else
+        {
+            let footer = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "sectionfooter", for: indexPath)
+            return footer
+        }
+        
+        
+        
         
         
         

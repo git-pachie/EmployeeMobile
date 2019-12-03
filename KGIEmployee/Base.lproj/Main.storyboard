@@ -24,17 +24,17 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dRa-Vo-v9k">
-                                <rect key="frame" x="10" y="94" width="394" height="758"/>
+                                <rect key="frame" x="15" y="94" width="384" height="753"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fxO-O2-JXj">
                                     <size key="itemSize" width="202" height="196"/>
                                     <size key="headerReferenceSize" width="50" height="50"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <size key="footerReferenceSize" width="50" height="31"/>
+                                    <inset key="sectionInset" minX="0.0" minY="5" maxX="0.0" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="u6i-3b-TQY" customClass="EmployeeCollectionViewCell" customModule="KGIEmployee" customModuleProvider="target">
-                                        <rect key="frame" x="96" y="50" width="202" height="196"/>
+                                        <rect key="frame" x="91" y="55" width="202" height="196"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ToQ-eI-aBK">
                                             <rect key="frame" x="0.0" y="0.0" width="202" height="196"/>
@@ -110,13 +110,13 @@
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="departmentheader" id="l67-JI-fRu" customClass="DepartmentHeaderReusableView" customModule="KGIEmployee" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="394" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="384" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Department Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEE-Bw-rBS">
-                                            <rect key="frame" x="13" y="15" width="368" height="21"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Department Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEE-Bw-rBS">
+                                            <rect key="frame" x="13" y="15" width="358" height="21"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="20"/>
+                                            <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -130,20 +130,23 @@
                                         <outlet property="labelDepartmentHeader" destination="gEE-Bw-rBS" id="dfe-Yd-upj"/>
                                     </connections>
                                 </collectionReusableView>
+                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="sectionfooter" id="4nl-xs-VhO">
+                                    <rect key="frame" x="0.0" y="261" width="384" height="31"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="jFd-fT-jQA"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="I46-xA-xEL"/>
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="us4-Jt-Jup" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2TR-q2-DHO"/>
                             <constraint firstItem="dRa-Vo-v9k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="5Ff-bd-Z1v"/>
-                            <constraint firstItem="dRa-Vo-v9k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="O1S-It-eok"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dRa-Vo-v9k" secondAttribute="bottom" constant="10" id="OaH-r6-924"/>
+                            <constraint firstItem="dRa-Vo-v9k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="O1S-It-eok"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dRa-Vo-v9k" secondAttribute="bottom" constant="15" id="OaH-r6-924"/>
                             <constraint firstItem="us4-Jt-Jup" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Pj8-4g-rjO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dRa-Vo-v9k" secondAttribute="trailing" constant="10" id="Y3v-qT-8HE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dRa-Vo-v9k" secondAttribute="trailing" constant="15" id="Y3v-qT-8HE"/>
                             <constraint firstItem="us4-Jt-Jup" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wM3-6n-GjW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
