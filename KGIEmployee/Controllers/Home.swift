@@ -23,30 +23,36 @@ class HomeController: UIViewController {
         
         
         
-        
         stp.performURLRequest {[weak self] (result) in
             
             guard let self = self else { return }
             
+            
+            
+            
+//            var filtered = result.filter { (emplist) -> Bool in
+//                
+//                var ls = [EmployeeDTO]()
+//                
+//                
+//                var collection = emplist.employees.filter { (emp1) -> Bool in
+//                    return emp1.name.contains("archimedes")
+//                }
+//                
+//                for inn in collection
+//                {
+//                    var e = Employee.init(employeeId: inn.employeeId, name: inn.name, department: inn.department, phone: inn.phone, email: inn.email, imageFileName: inn.imageFileName)
+//                    
+//                    ls.append(EmployeeDTO.init(departmentName: inn.department, employees: <#T##[Employee]#>))
+//                }
+//                
+//            }
+            
             self.employees = result
-            
-            
             self.employeeCollectionView.reloadData()
             
         }
         
-        
-        
-        
-//        DBEmployee.getemployees {[weak self] (result) in
-//
-//            guard let self = self else { return }
-//
-//            self.employees = result
-//
-//            self.employeeCollectionView.reloadData()
-//
-//        }
         
     }
     
