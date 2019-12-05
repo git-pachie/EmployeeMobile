@@ -32,7 +32,7 @@ struct StaffManager {
     
     func downloadImage(fileNameToDownload: String, completion: @escaping (Bool) -> ()) {
         
-        DispatchQueue.global(qos: .userInitiated).async {
+        
             
             let session = URLSession(configuration: .default)
              
@@ -69,7 +69,16 @@ struct StaffManager {
                 DispatchQueue.main.async {
                     do
                      {
-                         _ = try image!.jpegData(compressionQuality: 1.0)?.write(to: destinationPath, options: .atomic)
+                        
+
+                        if image == nil
+                        {
+                            completion(false)
+                            
+                            return
+                        }
+                        
+                        _ = try image!.jpegData(compressionQuality: 1.0)?.write(to: destinationPath, options: .atomic)
                          
                          
                          completion(true)
@@ -89,7 +98,7 @@ struct StaffManager {
                  
              }
              task.resume()
-        }
+        
         
         
         

@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -25,7 +25,6 @@
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dRa-Vo-v9k">
                                 <rect key="frame" x="15" y="94" width="384" height="753"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fxO-O2-JXj">
                                     <size key="itemSize" width="202" height="196"/>
                                     <size key="headerReferenceSize" width="50" height="50"/>
@@ -44,14 +43,14 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="202" height="196"/>
                                                 </imageView>
                                                 <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ODE-Sh-TkF">
-                                                    <rect key="frame" x="0.0" y="136" width="202" height="60"/>
+                                                    <rect key="frame" x="0.0" y="146" width="202" height="50"/>
                                                     <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="60" id="mBJ-Z9-O9U"/>
+                                                        <constraint firstAttribute="height" constant="50" id="mBJ-Z9-O9U"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information Technology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGz-4x-ncH">
-                                                    <rect key="frame" x="10" y="160" width="182" height="12"/>
+                                                    <rect key="frame" x="10" y="167" width="182" height="12"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="12" id="NNO-U3-hdd"/>
                                                     </constraints>
@@ -60,7 +59,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email: archimedes.angeles@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddI-eJ-UYo">
-                                                    <rect key="frame" x="10" y="174" width="182" height="12"/>
+                                                    <rect key="frame" x="10" y="180" width="182" height="12"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="12" id="VHd-yP-wmy"/>
                                                     </constraints>
@@ -69,7 +68,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Archimedes Angeles Gatchalian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hC9-9E-V37">
-                                                    <rect key="frame" x="10" y="141" width="182" height="17"/>
+                                                    <rect key="frame" x="10" y="149" width="182" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="Fkg-s4-MtI"/>
                                                     </constraints>
@@ -80,7 +79,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="ZGz-4x-ncH" firstAttribute="leading" secondItem="ToQ-eI-aBK" secondAttribute="leading" constant="10" id="0Uh-y8-MNR"/>
-                                                <constraint firstAttribute="bottom" secondItem="ddI-eJ-UYo" secondAttribute="bottom" constant="10" id="1PK-3A-zja"/>
+                                                <constraint firstAttribute="bottom" secondItem="ddI-eJ-UYo" secondAttribute="bottom" constant="4" id="1PK-3A-zja"/>
                                                 <constraint firstAttribute="trailing" secondItem="ddI-eJ-UYo" secondAttribute="trailing" constant="10" id="1ap-tY-WOA"/>
                                                 <constraint firstItem="ODE-Sh-TkF" firstAttribute="leading" secondItem="ToQ-eI-aBK" secondAttribute="leading" id="7My-jc-SQq"/>
                                                 <constraint firstItem="hC9-9E-V37" firstAttribute="leading" secondItem="ToQ-eI-aBK" secondAttribute="leading" constant="10" id="Gbh-jD-die"/>
@@ -91,11 +90,11 @@
                                                 <constraint firstAttribute="bottom" secondItem="ODE-Sh-TkF" secondAttribute="bottom" id="Rc0-Iv-Hpf"/>
                                                 <constraint firstAttribute="trailing" secondItem="ODE-Sh-TkF" secondAttribute="trailing" id="Vyz-9U-OWF"/>
                                                 <constraint firstItem="ddI-eJ-UYo" firstAttribute="leading" secondItem="ToQ-eI-aBK" secondAttribute="leading" constant="10" id="XZF-9E-mAJ"/>
-                                                <constraint firstItem="ZGz-4x-ncH" firstAttribute="top" secondItem="hC9-9E-V37" secondAttribute="bottom" constant="2" id="b65-m7-GnF"/>
-                                                <constraint firstItem="ddI-eJ-UYo" firstAttribute="top" secondItem="ZGz-4x-ncH" secondAttribute="bottom" constant="2" id="bLf-DR-w5a"/>
+                                                <constraint firstItem="ZGz-4x-ncH" firstAttribute="top" secondItem="hC9-9E-V37" secondAttribute="bottom" constant="1" id="b65-m7-GnF"/>
+                                                <constraint firstItem="ddI-eJ-UYo" firstAttribute="top" secondItem="ZGz-4x-ncH" secondAttribute="bottom" constant="1" id="bLf-DR-w5a"/>
                                                 <constraint firstAttribute="trailing" secondItem="kgJ-Aw-ikG" secondAttribute="trailing" id="blY-Py-L2n"/>
                                                 <constraint firstAttribute="trailing" secondItem="hC9-9E-V37" secondAttribute="trailing" constant="10" id="cru-nV-Lvg"/>
-                                                <constraint firstItem="ZGz-4x-ncH" firstAttribute="top" secondItem="hC9-9E-V37" secondAttribute="bottom" constant="2" id="kIp-JC-HgF"/>
+                                                <constraint firstItem="ZGz-4x-ncH" firstAttribute="top" secondItem="hC9-9E-V37" secondAttribute="bottom" constant="1" id="kIp-JC-HgF"/>
                                                 <constraint firstAttribute="bottom" secondItem="kgJ-Aw-ikG" secondAttribute="bottom" id="zRX-B2-w7q"/>
                                             </constraints>
                                         </collectionViewCellContentView>
@@ -115,7 +114,7 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Department Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEE-Bw-rBS">
                                             <rect key="frame" x="13" y="15" width="358" height="21"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="20"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="24"/>
                                             <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>

@@ -64,12 +64,12 @@ class HomeController: UIViewController {
         for item in employees {
             for inn in item.employees {
                 
-                DispatchQueue.global(qos: .userInitiated).async {
+                //DispatchQueue.global(qos: .userInitiated).async {
                     
                     self.stp.downloadImage(fileNameToDownload: inn.imageFileName) { (success) in
                         print("download result \(success)")
-                        sleep(10)
-                    }
+                        //sleep(10)
+                   // }
                 }
                 
                 
@@ -107,13 +107,13 @@ extension HomeController: UICollectionViewDataSource, UICollectionViewDelegateFl
         
         
         //let height = CGFloat(200)
-        let width = employeeCollectionView.bounds.width
+        let width = employeeCollectionView.bounds.width - 10
         let flow = collectionViewLayout as! UICollectionViewFlowLayout
         let spaceBetweenCells = flow.minimumInteritemSpacing
         
-        let adjwidth = (width - spaceBetweenCells) / 2
+        let adjwidth = (width - spaceBetweenCells) / 3
         
-        let adjHeight = adjwidth * 1.25
+        let adjHeight = adjwidth * 1.30
         
         return CGSize(width: adjwidth, height: adjHeight)
     }
